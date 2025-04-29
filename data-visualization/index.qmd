@@ -1,0 +1,9 @@
+---
+title: "Data Visualization"
+format: html
+---
+
+# 📘 Python Tutorials
+
+- [Data Visualization](#)
+- [Data Visualization Maps](#)

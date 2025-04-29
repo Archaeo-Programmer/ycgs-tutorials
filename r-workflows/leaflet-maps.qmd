@@ -1,0 +1,61 @@
+---
+title: "Mapping with Leaflet in R"
+format: html
+---
+
+# 🗺️ Interactive Maps with `leaflet`
+
+In this tutorial, we’ll explore how to create interactive web maps in R using the [`leaflet`](https://rstudio.github.io/leaflet/) package.
+
+## 📦 Load the `leaflet` package
+
+```r
+library(leaflet)
+```
+
+## 🌍 Create a basic map
+
+This will show a map centered on San Francisco with a popup marker.
+
+```r
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(
+    lng = -122.4194,
+    lat = 37.7749,
+    popup = "San Francisco, CA"
+  )
+```
+
+## 🧭 Customize with map styles and circles
+
+Now we’ll use a styled map and draw a red circle around a point.
+
+```r
+leaflet() %>%
+  addProviderTiles("Stamen.TonerLite") %>%
+  addCircles(
+    lng = -122.4194,
+    lat = 37.7749,
+    radius = 500,
+    color = "red",
+    weight = 2,
+    fillOpacity = 0.5,
+    popup = "Downtown Area"
+  )
+```
+
+You can explore other base maps using different `addProviderTiles()` options, like:
+
+- `"CartoDB.Positron"`
+- `"Esri.WorldImagery"`
+- `"OpenTopoMap"`
+
+## 🧠 Summary
+
+- `leaflet()` initializes the map
+- `addTiles()` or `addProviderTiles()` set the background map layer
+- `addMarkers()` places clickable points
+- `addCircles()` draws regions or focus areas
+
+This is a powerful way to add spatial interactivity to your reports or Shiny apps.

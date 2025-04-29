@@ -1,0 +1,26 @@
+{
+  "python-scripts/index.qmd": {
+    "index.html": "774eee0e"
+  },
+  "data-visualization/index.qmd": {
+    "index.html": "f4a89467"
+  },
+  "r-workflows/index.qmd": {
+    "index.html": "63455c1e"
+  },
+  "index.qmd": {
+    "index.html": "2d7eb4ab"
+  },
+  "about.qmd": {
+    "about.html": "57d00efa"
+  },
+  "r-workflows/data-cleaning.qmd": {
+    "data-cleaning.html": "8fe85539"
+  },
+  "r-workflows/shiny-visualizations.qmd": {
+    "shiny-visualizations.html": "9e4f5767"
+  },
+  "r-workflows/leaflet-maps.qmd": {
+    "leaflet-maps.html": "4ec711d7"
+  }
+}

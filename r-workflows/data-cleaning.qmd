@@ -1,0 +1,59 @@
+---
+title: "Data Cleaning in R"
+format: html
+execute:
+  enabled: false
+filters:
+  - webr
+webr:
+  enabled: true
+  packages:
+    - tidyverse
+---
+
+# 🧹 Data Cleaning in R with `dplyr` (Interactive)
+
+In this tutorial, you can run R code directly in your browser using WebR!
+
+## 📦 Load the libraries
+
+```{webr}
+library(tidyverse)
+```
+
+## 🗃 Create a messy dataset
+
+```{webr}
+df <- tibble::tibble(
+  id = c(1, 2, NA, 4),
+  age = c("25", "thirty", "40", "35"),
+  income = c(50000, 60000, NA, 70000)
+)
+df
+```
+
+## 🔍 Inspect the data
+
+```{webr}
+glimpse(df)
+```
+
+## ✨ Clean the data
+
+```{webr}
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(age = as.numeric(age))
+
+clean_df
+```
+
+## 🧠 Summary
+
+In this example, we used:
+
+- `drop_na()` to remove missing rows
+- `mutate()` to convert text values to numeric
+- `glimpse()` to inspect data structure
+
+All code above is interactive — try modifying it yourself!

@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "My Coding Tutorials"
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "R Workflows"
+        href: r-workflows/index.qmd
+      - text: "Python Scripts"
+        href: python-scripts/index.qmd
+      - text: "Data Visualization"
+        href: data-visualization/index.qmd
+
+format:
+  html:
+    execute:
+      enabled: false
+    theme: minty
+    css: styles.css

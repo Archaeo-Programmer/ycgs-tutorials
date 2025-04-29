@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "r-workflows/index.html",
+    "href": "r-workflows/index.html",
+    "title": "R Workflows",
+    "section": "",
+    "text": "📘 R Tutorials\n\nData Cleaning in R\nMapping with Leaflet\nShiny Apps for Data Visualization"
+  },
+  {
+    "objectID": "python-scripts/index.html",
+    "href": "python-scripts/index.html",
+    "title": "Python Scripts",
+    "section": "",
+    "text": "📘 Python Tutorials\n\nData Cleaning in Python\nMapping with Python\nPython for Data Visualization"
+  },
+  {
+    "objectID": "data-visualization/index.html",
+    "href": "data-visualization/index.html",
+    "title": "Data Visualization",
+    "section": "",
+    "text": "📘 Python Tutorials\n\nData Visualization\nData Visualization Maps"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Coding Tutorials",
+    "section": "",
+    "text": "🚀 Explore Tutorials\n\nR Workflows Python Scripts Data Visualization"
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html",
+    "href": "r-workflows/leaflet-maps.html",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "In this tutorial, we’ll explore how to create interactive web maps in R using the leaflet package.\n\n\nlibrary(leaflet)\n\n\n\nThis will show a map centered on San Francisco with a popup marker.\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(\n    lng = -122.4194,\n    lat = 37.7749,\n    popup = \"San Francisco, CA\"\n  )\n\n\n\nNow we’ll use a styled map and draw a red circle around a point.\nleaflet() %&gt;%\n  addProviderTiles(\"Stamen.TonerLite\") %&gt;%\n  addCircles(\n    lng = -122.4194,\n    lat = 37.7749,\n    radius = 500,\n    color = \"red\",\n    weight = 2,\n    fillOpacity = 0.5,\n    popup = \"Downtown Area\"\n  )\nYou can explore other base maps using different addProviderTiles() options, like:\n\n\"CartoDB.Positron\"\n\"Esri.WorldImagery\"\n\"OpenTopoMap\"\n\n\n\n\n\nleaflet() initializes the map\naddTiles() or addProviderTiles() set the background map layer\naddMarkers() places clickable points\naddCircles() draws regions or focus areas\n\nThis is a powerful way to add spatial interactivity to your reports or Shiny apps."
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#load-the-leaflet-package",
+    "href": "r-workflows/leaflet-maps.html#load-the-leaflet-package",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "library(leaflet)"
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#create-a-basic-map",
+    "href": "r-workflows/leaflet-maps.html#create-a-basic-map",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "This will show a map centered on San Francisco with a popup marker.\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(\n    lng = -122.4194,\n    lat = 37.7749,\n    popup = \"San Francisco, CA\"\n  )"
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#customize-with-map-styles-and-circles",
+    "href": "r-workflows/leaflet-maps.html#customize-with-map-styles-and-circles",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "Now we’ll use a styled map and draw a red circle around a point.\nleaflet() %&gt;%\n  addProviderTiles(\"Stamen.TonerLite\") %&gt;%\n  addCircles(\n    lng = -122.4194,\n    lat = 37.7749,\n    radius = 500,\n    color = \"red\",\n    weight = 2,\n    fillOpacity = 0.5,\n    popup = \"Downtown Area\"\n  )\nYou can explore other base maps using different addProviderTiles() options, like:\n\n\"CartoDB.Positron\"\n\"Esri.WorldImagery\"\n\"OpenTopoMap\""
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#summary",
+    "href": "r-workflows/leaflet-maps.html#summary",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "leaflet() initializes the map\naddTiles() or addProviderTiles() set the background map layer\naddMarkers() places clickable points\naddCircles() draws regions or focus areas\n\nThis is a powerful way to add spatial interactivity to your reports or Shiny apps."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html",
+    "href": "r-workflows/data-cleaning.html",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "In this tutorial, you can run R code directly in your browser using WebR!\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nIn this example, we used:\n\ndrop_na() to remove missing rows\nmutate() to convert text values to numeric\nglimpse() to inspect data structure\n\nAll code above is interactive — try modifying it yourself!"
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#load-the-libraries",
+    "href": "r-workflows/data-cleaning.html#load-the-libraries",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#create-a-messy-dataset",
+    "href": "r-workflows/data-cleaning.html#create-a-messy-dataset",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#inspect-the-data",
+    "href": "r-workflows/data-cleaning.html#inspect-the-data",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#clean-the-data",
+    "href": "r-workflows/data-cleaning.html#clean-the-data",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#summary",
+    "href": "r-workflows/data-cleaning.html#summary",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "In this example, we used:\n\ndrop_na() to remove missing rows\nmutate() to convert text values to numeric\nglimpse() to inspect data structure\n\nAll code above is interactive — try modifying it yourself!"
+  },
+  {
+    "objectID": "r-workflows/shiny-visualizations.html",
+    "href": "r-workflows/shiny-visualizations.html",
+    "title": "Shiny Apps for Data Visualization",
+    "section": "",
+    "text": "In this tutorial, we’ll create a simple interactive web app using the shiny package in R. It lets users control a histogram using a slider input.\n\n\nlibrary(shiny)\n\n\n\nui &lt;- fluidPage(\n  titlePanel(\"Dynamic Histogram\"),\n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"bins\",\n                  \"Number of bins:\",\n                  min = 1,\n                  max = 50,\n                  value = 30)\n    ),\n    mainPanel(\n      plotOutput(\"distPlot\")\n    )\n  )\n)\n\n\n\nserver &lt;- function(input, output) {\n  output$distPlot &lt;- renderPlot({\n    x &lt;- faithful$waiting\n    hist(x, breaks = input$bins,\n         col = 'skyblue', border = 'white')\n  })\n}\n\n\n\nshinyApp(ui = ui, server = server)\n\n\n\n\nfluidPage() builds a responsive web layout.\nsliderInput() gives users control over plot settings.\nrenderPlot() and plotOutput() create dynamic visualizations.\nThe built-in faithful dataset makes it easy to try without extra data.\n\nYou can extend this app to visualize your own data interactively, add tabs, inputs, and even maps or tables."
+  },
+  {
+    "objectID": "r-workflows/shiny-visualizations.html#load-the-shiny-package",
+    "href": "r-workflows/shiny-visualizations.html#load-the-shiny-package",
+    "title": "Shiny Apps for Data Visualization",
+    "section": "",
+    "text": "library(shiny)"
+  },
+  {
+    "objectID": "r-workflows/shiny-visualizations.html#define-the-user-interface-ui",
+    "href": "r-workflows/shiny-visualizations.html#define-the-user-interface-ui",
+    "title": "Shiny Apps for Data Visualization",
+    "section": "",
+    "text": "ui &lt;- fluidPage(\n  titlePanel(\"Dynamic Histogram\"),\n  sidebarLayout(\n    sidebarPanel(\n      sliderInput(\"bins\",\n                  \"Number of bins:\",\n                  min = 1,\n                  max = 50,\n                  value = 30)\n    ),\n    mainPanel(\n      plotOutput(\"distPlot\")\n    )\n  )\n)"
+  },
+  {
+    "objectID": "r-workflows/shiny-visualizations.html#define-the-server-logic",
+    "href": "r-workflows/shiny-visualizations.html#define-the-server-logic",
+    "title": "Shiny Apps for Data Visualization",
+    "section": "",
+    "text": "server &lt;- function(input, output) {\n  output$distPlot &lt;- renderPlot({\n    x &lt;- faithful$waiting\n    hist(x, breaks = input$bins,\n         col = 'skyblue', border = 'white')\n  })\n}"
+  },
+  {
+    "objectID": "r-workflows/shiny-visualizations.html#launch-the-shiny-app",
+    "href": "r-workflows/shiny-visualizations.html#launch-the-shiny-app",
+    "title": "Shiny Apps for Data Visualization",
+    "section": "",
+    "text": "shinyApp(ui = ui, server = server)"
+  },
+  {
+    "objectID": "r-workflows/shiny-visualizations.html#summary",
+    "href": "r-workflows/shiny-visualizations.html#summary",
+    "title": "Shiny Apps for Data Visualization",
+    "section": "",
+    "text": "fluidPage() builds a responsive web layout.\nsliderInput() gives users control over plot settings.\nrenderPlot() and plotOutput() create dynamic visualizations.\nThe built-in faithful dataset makes it easy to try without extra data.\n\nYou can extend this app to visualize your own data interactively, add tabs, inputs, and even maps or tables."
+  }
+]

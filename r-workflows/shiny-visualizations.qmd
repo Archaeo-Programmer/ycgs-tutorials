@@ -1,0 +1,61 @@
+---
+title: "Shiny Apps for Data Visualization"
+format: html
+---
+
+# 💡 Build Interactive Dashboards with `shiny`
+
+In this tutorial, we’ll create a simple interactive web app using the `shiny` package in R. It lets users control a histogram using a slider input.
+
+## 📦 Load the Shiny package
+
+```r
+library(shiny)
+```
+
+## 🛠 Define the user interface (UI)
+
+```r
+ui <- fluidPage(
+  titlePanel("Dynamic Histogram"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("bins",
+                  "Number of bins:",
+                  min = 1,
+                  max = 50,
+                  value = 30)
+    ),
+    mainPanel(
+      plotOutput("distPlot")
+    )
+  )
+)
+```
+
+## ⚙️ Define the server logic
+
+```r
+server <- function(input, output) {
+  output$distPlot <- renderPlot({
+    x <- faithful$waiting
+    hist(x, breaks = input$bins,
+         col = 'skyblue', border = 'white')
+  })
+}
+```
+
+## 🚀 Launch the Shiny app
+
+```r
+shinyApp(ui = ui, server = server)
+```
+
+## 🧠 Summary
+
+- `fluidPage()` builds a responsive web layout.
+- `sliderInput()` gives users control over plot settings.
+- `renderPlot()` and `plotOutput()` create dynamic visualizations.
+- The built-in `faithful` dataset makes it easy to try without extra data.
+
+You can extend this app to visualize your own data interactively, add tabs, inputs, and even maps or tables.

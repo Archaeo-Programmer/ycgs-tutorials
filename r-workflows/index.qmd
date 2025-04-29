@@ -1,0 +1,10 @@
+---
+title: "R Workflows"
+format: html
+---
+
+# 📘 R Tutorials
+
+- [Data Cleaning in R](data-cleaning.qmd)
+- [Mapping with Leaflet](leaflet-maps.qmd)
+- [Shiny Apps for Data Visualization](shiny-visualizations.qmd)
