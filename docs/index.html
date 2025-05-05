@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -67,12 +69,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-categories','listing-summary',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -92,6 +152,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tags.html"> 
+<span class="menu-text">Browse by Tag</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./r-workflows/index.html"> 
@@ -116,7 +180,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="UiUyMFdvcmtmbG93cw==">R Workflows <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -141,14 +207,110 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="explore-tutorials" class="level1">
 <h1>🚀 Explore Tutorials</h1>
-<div class="container text-center mt-4">
-<p><a class="btn btn-primary btn-lg m-3 custom-btn" href="r-workflows/index.html">R Workflows</a> <a class="btn btn-success btn-lg m-3 custom-btn" href="python-scripts/index.html">Python Scripts</a> <a class="btn btn-warning btn-lg m-3 custom-btn" href="data-visualization/index.html">Data Visualization</a></p>
-</div>
+<p>Welcome! Below you’ll find my latest tutorials across R, Python, and data visualization.</p>
+<!-- <div class="container text-center mt-4"> -->
+<!--   <a class="btn btn-primary btn-lg m-3 custom-btn" href="r-workflows/index.html">R Workflows</a> -->
+<!--   <a class="btn btn-success btn-lg m-3 custom-btn" href="python-scripts/index.html">Python Scripts</a> -->
+<!--   <a class="btn btn-warning btn-lg m-3 custom-btn" href="data-visualization/index.html">Data Visualization</a> -->
+<!-- </div> -->
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1745935432866" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./r-workflows/data-cleaning.html" class="no-external">Data Cleaning in R</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./r-workflows/data-cleaning.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1745933353711" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./r-workflows/index.html" class="no-external">R Workflows</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./r-workflows/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1745932204699" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./python-scripts/index.html" class="no-external">Python Scripts</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./python-scripts/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1745932194014" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./data-visualization/index.html" class="no-external">Data Visualization</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./data-visualization/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="UiUyMFdvcmtmbG93cw==" data-listing-date-sort="1740805200000" data-listing-file-modified-sort="1746458073606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./r-workflows/shiny-visualizations.html" class="no-external">Shiny Apps for Data Visualization</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFdvcmtmbG93cw=='); return false;">R Workflows</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./r-workflows/shiny-visualizations.html" class="no-external">
+<div class="listing-date">
+Mar 1, 2025
+</div>
+<div class="metadata-value listing-summary">
+A guide to building and applying custom themes in a shiny app.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="UiUyMFdvcmtmbG93cw==" data-listing-date-sort="1740805200000" data-listing-file-modified-sort="1746458088105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./r-workflows/leaflet-maps.html" class="no-external">Mapping with Leaflet in R</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFdvcmtmbG93cw=='); return false;">R Workflows</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="./r-workflows/leaflet-maps.html" class="no-external">
+<div class="listing-date">
+Mar 1, 2025
+</div>
+<div class="metadata-value listing-summary">
+A guide to building and applying custom themes in ggplot2.
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

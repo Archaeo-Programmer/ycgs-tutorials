@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/tags.html",
+    "items": [
+      "/r-workflows/data-cleaning.html",
+      "/r-workflows/index.html",
+      "/python-scripts/index.html",
+      "/data-visualization/index.html",
+      "/r-workflows/shiny-visualizations.html",
+      "/r-workflows/leaflet-maps.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/r-workflows/data-cleaning.html",
+      "/r-workflows/index.html",
+      "/python-scripts/index.html",
+      "/data-visualization/index.html",
+      "/r-workflows/shiny-visualizations.html",
+      "/r-workflows/leaflet-maps.html"
+    ]
+  }
+]

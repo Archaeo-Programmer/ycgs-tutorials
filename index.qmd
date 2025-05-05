@@ -1,6 +1,5 @@
 ---
 title: "Welcome to My Coding Tutorials"
-format: html
 listing:
   contents:
     - r-workflows
@@ -14,8 +13,10 @@ listing:
 
 # 🚀 Explore Tutorials
 
-<div class="container text-center mt-4">
-  <a class="btn btn-primary btn-lg m-3 custom-btn" href="r-workflows/index.html">R Workflows</a>
-  <a class="btn btn-success btn-lg m-3 custom-btn" href="python-scripts/index.html">Python Scripts</a>
-  <a class="btn btn-warning btn-lg m-3 custom-btn" href="data-visualization/index.html">Data Visualization</a>
-</div>
+Welcome! Below you'll find my latest tutorials across R, Python, and data visualization.
+
+<!-- <div class="container text-center mt-4"> -->
+<!--   <a class="btn btn-primary btn-lg m-3 custom-btn" href="r-workflows/index.html">R Workflows</a> -->
+<!--   <a class="btn btn-success btn-lg m-3 custom-btn" href="python-scripts/index.html">Python Scripts</a> -->
+<!--   <a class="btn btn-warning btn-lg m-3 custom-btn" href="data-visualization/index.html">Data Visualization</a> -->
+<!-- </div> -->

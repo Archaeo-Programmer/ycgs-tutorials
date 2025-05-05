@@ -1,108 +1,17 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "tags.html",
+    "href": "tags.html",
+    "title": "Browse by Tag",
     "section": "",
-    "text": "About this site"
+    "text": "Explore tutorials by tags:\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nData Cleaning in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR Workflows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython Scripts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShiny Apps for Data Visualization\n\n\n\n\n\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMapping with Leaflet in R\n\n\n\n\n\n\n\n\nMar 1, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "r-workflows/leaflet-maps.html",
-    "href": "r-workflows/leaflet-maps.html",
-    "title": "Mapping with Leaflet in R",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Coding Tutorials",
     "section": "",
-    "text": "In this tutorial, we’ll explore how to create interactive web maps in R using the leaflet package.\n\n\nlibrary(leaflet)\n\n\n\nThis will show a map centered on San Francisco with a popup marker.\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(\n    lng = -122.4194,\n    lat = 37.7749,\n    popup = \"San Francisco, CA\"\n  )\n\n\n\nNow we’ll use a styled map and draw a red circle around a point.\nleaflet() %&gt;%\n  addProviderTiles(\"Stamen.TonerLite\") %&gt;%\n  addCircles(\n    lng = -122.4194,\n    lat = 37.7749,\n    radius = 500,\n    color = \"red\",\n    weight = 2,\n    fillOpacity = 0.5,\n    popup = \"Downtown Area\"\n  )\nYou can explore other base maps using different addProviderTiles() options, like:\n\n\"CartoDB.Positron\"\n\"Esri.WorldImagery\"\n\"OpenTopoMap\"\n\n\n\n\n\nleaflet() initializes the map\naddTiles() or addProviderTiles() set the background map layer\naddMarkers() places clickable points\naddCircles() draws regions or focus areas\n\nThis is a powerful way to add spatial interactivity to your reports or Shiny apps."
-  },
-  {
-    "objectID": "r-workflows/leaflet-maps.html#load-the-leaflet-package",
-    "href": "r-workflows/leaflet-maps.html#load-the-leaflet-package",
-    "title": "Mapping with Leaflet in R",
-    "section": "",
-    "text": "library(leaflet)"
-  },
-  {
-    "objectID": "r-workflows/leaflet-maps.html#create-a-basic-map",
-    "href": "r-workflows/leaflet-maps.html#create-a-basic-map",
-    "title": "Mapping with Leaflet in R",
-    "section": "",
-    "text": "This will show a map centered on San Francisco with a popup marker.\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(\n    lng = -122.4194,\n    lat = 37.7749,\n    popup = \"San Francisco, CA\"\n  )"
-  },
-  {
-    "objectID": "r-workflows/leaflet-maps.html#customize-with-map-styles-and-circles",
-    "href": "r-workflows/leaflet-maps.html#customize-with-map-styles-and-circles",
-    "title": "Mapping with Leaflet in R",
-    "section": "",
-    "text": "Now we’ll use a styled map and draw a red circle around a point.\nleaflet() %&gt;%\n  addProviderTiles(\"Stamen.TonerLite\") %&gt;%\n  addCircles(\n    lng = -122.4194,\n    lat = 37.7749,\n    radius = 500,\n    color = \"red\",\n    weight = 2,\n    fillOpacity = 0.5,\n    popup = \"Downtown Area\"\n  )\nYou can explore other base maps using different addProviderTiles() options, like:\n\n\"CartoDB.Positron\"\n\"Esri.WorldImagery\"\n\"OpenTopoMap\""
-  },
-  {
-    "objectID": "r-workflows/leaflet-maps.html#summary",
-    "href": "r-workflows/leaflet-maps.html#summary",
-    "title": "Mapping with Leaflet in R",
-    "section": "",
-    "text": "leaflet() initializes the map\naddTiles() or addProviderTiles() set the background map layer\naddMarkers() places clickable points\naddCircles() draws regions or focus areas\n\nThis is a powerful way to add spatial interactivity to your reports or Shiny apps."
-  },
-  {
-    "objectID": "r-workflows/index.html",
-    "href": "r-workflows/index.html",
-    "title": "R Workflows",
-    "section": "",
-    "text": "📘 R Tutorials\n\nData Cleaning in R\nMapping with Leaflet\nShiny Apps for Data Visualization"
-  },
-  {
-    "objectID": "data-visualization/index.html",
-    "href": "data-visualization/index.html",
-    "title": "Data Visualization",
-    "section": "",
-    "text": "📘 Python Tutorials\n\nData Visualization\nData Visualization Maps"
-  },
-  {
-    "objectID": "python-scripts/index.html",
-    "href": "python-scripts/index.html",
-    "title": "Python Scripts",
-    "section": "",
-    "text": "📘 Python Tutorials\n\nData Cleaning in Python\nMapping with Python\nPython for Data Visualization"
-  },
-  {
-    "objectID": "r-workflows/data-cleaning.html",
-    "href": "r-workflows/data-cleaning.html",
-    "title": "Data Cleaning in R",
-    "section": "",
-    "text": "In this tutorial, you can run R code directly in your browser using WebR!\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nIn this example, we used:\n\ndrop_na() to remove missing rows\nmutate() to convert text values to numeric\nglimpse() to inspect data structure\n\nAll code above is interactive — try modifying it yourself!"
-  },
-  {
-    "objectID": "r-workflows/data-cleaning.html#load-the-libraries",
-    "href": "r-workflows/data-cleaning.html#load-the-libraries",
-    "title": "Data Cleaning in R",
-    "section": "",
-    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "r-workflows/data-cleaning.html#create-a-messy-dataset",
-    "href": "r-workflows/data-cleaning.html#create-a-messy-dataset",
-    "title": "Data Cleaning in R",
-    "section": "",
-    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "r-workflows/data-cleaning.html#inspect-the-data",
-    "href": "r-workflows/data-cleaning.html#inspect-the-data",
-    "title": "Data Cleaning in R",
-    "section": "",
-    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "r-workflows/data-cleaning.html#clean-the-data",
-    "href": "r-workflows/data-cleaning.html#clean-the-data",
-    "title": "Data Cleaning in R",
-    "section": "",
-    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "r-workflows/data-cleaning.html#summary",
-    "href": "r-workflows/data-cleaning.html#summary",
-    "title": "Data Cleaning in R",
-    "section": "",
-    "text": "In this example, we used:\n\ndrop_na() to remove missing rows\nmutate() to convert text values to numeric\nglimpse() to inspect data structure\n\nAll code above is interactive — try modifying it yourself!"
+    "text": "🚀 Explore Tutorials\nWelcome! Below you’ll find my latest tutorials across R, Python, and data visualization.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Cleaning in R\n\n\n\n\n\n\n\n\n\n\nR Workflows\n\n\n\n\n\n\n\n\n\n\nPython Scripts\n\n\n\n\n\n\n\n\n\n\nData Visualization\n\n\n\n\n\n\n\n\n\n\nShiny Apps for Data Visualization\n\n\n\nR Workflows\n\n\n\n\n\n\nMar 1, 2025\n\n\nA guide to building and applying custom themes in a shiny app.\n\n\n\n\n\n\n\nMapping with Leaflet in R\n\n\n\nR Workflows\n\n\n\n\n\n\nMar 1, 2025\n\n\nA guide to building and applying custom themes in ggplot2.\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "r-workflows/shiny-visualizations.html",
@@ -147,10 +56,115 @@
     "text": "fluidPage() builds a responsive web layout.\nsliderInput() gives users control over plot settings.\nrenderPlot() and plotOutput() create dynamic visualizations.\nThe built-in faithful dataset makes it easy to try without extra data.\n\nYou can extend this app to visualize your own data interactively, add tabs, inputs, and even maps or tables."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Coding Tutorials",
+    "objectID": "r-workflows/data-cleaning.html",
+    "href": "r-workflows/data-cleaning.html",
+    "title": "Data Cleaning in R",
     "section": "",
-    "text": "🚀 Explore Tutorials\n\nR Workflows Python Scripts Data Visualization"
+    "text": "In this tutorial, you can run R code directly in your browser using WebR!\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\nIn this example, we used:\n\ndrop_na() to remove missing rows\nmutate() to convert text values to numeric\nglimpse() to inspect data structure\n\nAll code above is interactive — try modifying it yourself!"
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#load-the-libraries",
+    "href": "r-workflows/data-cleaning.html#load-the-libraries",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#create-a-messy-dataset",
+    "href": "r-workflows/data-cleaning.html#create-a-messy-dataset",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#inspect-the-data",
+    "href": "r-workflows/data-cleaning.html#inspect-the-data",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#clean-the-data",
+    "href": "r-workflows/data-cleaning.html#clean-the-data",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "r-workflows/data-cleaning.html#summary",
+    "href": "r-workflows/data-cleaning.html#summary",
+    "title": "Data Cleaning in R",
+    "section": "",
+    "text": "In this example, we used:\n\ndrop_na() to remove missing rows\nmutate() to convert text values to numeric\nglimpse() to inspect data structure\n\nAll code above is interactive — try modifying it yourself!"
+  },
+  {
+    "objectID": "python-scripts/index.html",
+    "href": "python-scripts/index.html",
+    "title": "Python Scripts",
+    "section": "",
+    "text": "📘 Python Tutorials\n\nData Cleaning in Python\nMapping with Python\nPython for Data Visualization"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "My Coding Tutorials",
+    "section": "",
+    "text": "✅ LICENSE (MIT License)\n```text MIT License\nCopyright (c) 2025 Your Name\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "data-visualization/index.html",
+    "href": "data-visualization/index.html",
+    "title": "Data Visualization",
+    "section": "",
+    "text": "📘 Python Tutorials\n\nData Visualization\nData Visualization Maps"
+  },
+  {
+    "objectID": "r-workflows/index.html",
+    "href": "r-workflows/index.html",
+    "title": "R Workflows",
+    "section": "",
+    "text": "📘 R Tutorials\n\nData Cleaning in R\nMapping with Leaflet\nShiny Apps for Data Visualization"
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html",
+    "href": "r-workflows/leaflet-maps.html",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "In this tutorial, we’ll explore how to create interactive web maps in R using the leaflet package.\n\n\nlibrary(leaflet)\n\n\n\nThis will show a map centered on San Francisco with a popup marker.\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(\n    lng = -122.4194,\n    lat = 37.7749,\n    popup = \"San Francisco, CA\"\n  )\n\n\n\nNow we’ll use a styled map and draw a red circle around a point.\nleaflet() %&gt;%\n  addProviderTiles(\"Stamen.TonerLite\") %&gt;%\n  addCircles(\n    lng = -122.4194,\n    lat = 37.7749,\n    radius = 500,\n    color = \"red\",\n    weight = 2,\n    fillOpacity = 0.5,\n    popup = \"Downtown Area\"\n  )\nYou can explore other base maps using different addProviderTiles() options, like:\n\n\"CartoDB.Positron\"\n\"Esri.WorldImagery\"\n\"OpenTopoMap\"\n\n\n\n\n\nleaflet() initializes the map\naddTiles() or addProviderTiles() set the background map layer\naddMarkers() places clickable points\naddCircles() draws regions or focus areas\n\nThis is a powerful way to add spatial interactivity to your reports or Shiny apps."
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#load-the-leaflet-package",
+    "href": "r-workflows/leaflet-maps.html#load-the-leaflet-package",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "library(leaflet)"
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#create-a-basic-map",
+    "href": "r-workflows/leaflet-maps.html#create-a-basic-map",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "This will show a map centered on San Francisco with a popup marker.\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(\n    lng = -122.4194,\n    lat = 37.7749,\n    popup = \"San Francisco, CA\"\n  )"
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#customize-with-map-styles-and-circles",
+    "href": "r-workflows/leaflet-maps.html#customize-with-map-styles-and-circles",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "Now we’ll use a styled map and draw a red circle around a point.\nleaflet() %&gt;%\n  addProviderTiles(\"Stamen.TonerLite\") %&gt;%\n  addCircles(\n    lng = -122.4194,\n    lat = 37.7749,\n    radius = 500,\n    color = \"red\",\n    weight = 2,\n    fillOpacity = 0.5,\n    popup = \"Downtown Area\"\n  )\nYou can explore other base maps using different addProviderTiles() options, like:\n\n\"CartoDB.Positron\"\n\"Esri.WorldImagery\"\n\"OpenTopoMap\""
+  },
+  {
+    "objectID": "r-workflows/leaflet-maps.html#summary",
+    "href": "r-workflows/leaflet-maps.html#summary",
+    "title": "Mapping with Leaflet in R",
+    "section": "",
+    "text": "leaflet() initializes the map\naddTiles() or addProviderTiles() set the background map layer\naddMarkers() places clickable points\naddCircles() draws regions or focus areas\n\nThis is a powerful way to add spatial interactivity to your reports or Shiny apps."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]

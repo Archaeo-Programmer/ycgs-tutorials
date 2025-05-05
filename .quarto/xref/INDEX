@@ -22,5 +22,11 @@
   },
   "r-workflows/leaflet-maps.qmd": {
     "leaflet-maps.html": "4ec711d7"
+  },
+  "LICENSE.md": {
+    "LICENSE.html": "fb9e4323"
+  },
+  "tags.qmd": {
+    "tags.html": "2e9bc8f5"
   }
 }

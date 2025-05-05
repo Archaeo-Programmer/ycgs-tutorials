@@ -1,5 +1,3 @@
----
-
 ### ✅ `LICENSE` (MIT License)
 
 ```text
