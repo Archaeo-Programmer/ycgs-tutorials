@@ -1,6 +1,15 @@
 ---
 title: "Welcome to My Coding Tutorials"
 format: html
+listing:
+  contents:
+    - r-workflows
+    - python-scripts
+    - data-visualization
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [title, date, categories, summary]
 ---
 
 # 🚀 Explore Tutorials

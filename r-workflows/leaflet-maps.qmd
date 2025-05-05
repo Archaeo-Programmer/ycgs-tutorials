@@ -1,6 +1,10 @@
 ---
 title: "Mapping with Leaflet in R"
 format: html
+date: 2025-03-01
+categories: [R Workflows]
+tags: [r, ggplot2, leaflet]
+summary: A guide to building and applying custom themes in ggplot2.
 ---
 
 # 🗺️ Interactive Maps with `leaflet`

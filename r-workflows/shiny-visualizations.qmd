@@ -1,6 +1,10 @@
 ---
 title: "Shiny Apps for Data Visualization"
 format: html
+date: 2025-03-01
+categories: [R Workflows]
+tags: [r, shiny]
+summary: A guide to building and applying custom themes in a shiny app.
 ---
 
 # 💡 Build Interactive Dashboards with `shiny`

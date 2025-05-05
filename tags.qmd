@@ -1,0 +1,13 @@
+---
+title: "Browse by Tag"
+listing:
+  contents:
+    - r-workflows
+    - python-scripts
+    - data-visualization
+  sort: "date desc"
+  type: default
+  filter-ui: true
+---
+
+Explore tutorials by tags:

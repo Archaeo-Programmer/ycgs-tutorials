@@ -9,6 +9,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Browse by Tag"
+        href: tags.qmd
       - text: "R Workflows"
         href: r-workflows/index.qmd
       - text: "Python Scripts"
